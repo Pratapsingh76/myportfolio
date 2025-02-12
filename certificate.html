@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,500;1,100&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <title>pratapsingh.wuaze.com</title>
+    <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;}
+	
+section {
+      display: none;
+      padding: 20px;
+    }
+    #coursera {
+            display: block; /* By default, show the certificate section */
+        }
+
+    .carousel-inner img {
+    width: 100%;
+    height: 90vh;
+    }
+
+    .aboutimg{
+    width: 100%;
+    height: 250px !important;
+    }
+    </style>
+ 
+</head>
+<body>
+    <header class="header">
+        <!-- <img class="logo" src="img/logo.png" alt="Logo image"> -->
+        <a href="index.html" class="logo">Certificates</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+          <a href="index.html" onclick="showSection('')">Home</a>
+  	<a href="#" onclick="showSection('coursera')">Coursera</a>
+  	<a href="#" onclick="showSection('exin')">Exin</a>
+  	<a href="#" onclick="showSection('hackerrank')">HackeRrank</a>
+  	<a href="#" onclick="showSection('great')">Greate Learning</a>
+	<a href="#" onclick="showSection('internship')">Internship</a>
+          </nav>
+        </header>
+
+        <section id="certificate">
+            <h2>Home Section</h2>
+            <p>This is the content of the Home section.</p>
+          </section>
+
+<section  id="coursera">
+    <div class="py-5">
+        <h2 class="text-center"> Coursera Certificates </h2>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="other/AI for Everyone_page-0001.jpg" class="img-fluid pb-4">
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="other/Data Analysis with R Programming_page-0001.jpg" class="img-fluid pb-4">
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="other/Introduction to Artificial Intelligence (AI)_page-0001.jpg" class="img-fluid pb-4">
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="other/machin learning with python_page-0001.jpg" class="img-fluid pb-4">
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="other/python_page-0001.jpg" class="img-fluid pb-4">
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="other/Coursera PS_page-0001.jpg" class="img-fluid pb-4">
+            </div>
+
+            
+            
+        </div>
+    </div>
+</section>
+
+<section  id="exin">
+    <div class="py-5">
+        <h2 class="text-center"> EXIN Certificates </h2>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+
+               <div class="col-lg-4 col-md-4 col-12">
+                    <img src="other/EXIN/EXIN BCS AI certificate_page-0001.jpg" class="img-fluid pb-4">
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <img src="other/EXIN/blockchainEXIN_page-0001.jpg" class="img-fluid pb-4">
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <img src="other/EXIN/cloud computingEXIN (2)_page-0001.jpg" class="img-fluid pb-4">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="my-5" id="hackerrank">
+        <div class="py-5">
+            <h2 class="text-center">HackerRank Certificates </h2>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+    
+                   <div class="col-lg-4 col-md-4 col-12">
+                        <img src="other/Hackerrank/python_basic certificate_page-0001.jpg" class="img-fluid pb-4">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <img src="other/Hackerrank/java_basic certificate_page-0001.jpg" class="img-fluid pb-4">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <img src="other/Hackerrank/css certificate in hackerrank_page-0001.jpg" class="img-fluid pb-4">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    
+        <section class="my-5" id="great">
+            <div class="py-5">
+                <h2 class="text-center">Greet Learning Certificates </h2>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+        
+                       <div class="col-lg-4 col-md-4 col-12">
+                            <img src="other/greate/phpcert_page-0001.jpg" class="img-fluid pb-4">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <img src="other/greate/mlcertificate_page-0001.jpg" class="img-fluid pb-4">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <img src="other/greate/frontend html_page-0001.jpg" class="img-fluid pb-4">
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="my-5" id="internship">
+                <div class="py-5">
+                    <h2 class="text-center">InternShip Certificates </h2>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+            
+                           <div class="col-lg-4 col-md-4 col-12">
+                                <img src="other/internship/pantechinternship_page-0001.jpg" class="img-fluid pb-4">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <img src="other/internship/codsoft_page-0001.jpg" class="img-fluid pb-4">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <img src="other/internship/bhartintern_page-0001.jpg" class="img-fluid pb-4">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+	<script>
+  function showSection(sectionId) {
+    // Hide all sections
+    var sections = document.querySelectorAll('section');
+    sections.forEach(function(section) {
+      section.style.display = 'none';
+    });
+
+    // Show the selected section
+    var selectedSection = document.getElementById(sectionId);
+    selectedSection.style.display = 'block';
+  }
+</script>
+<footer  class="footer">
+
+    <div class="footer-text">
+      <p>Copyright &copy;2023 by pratapsingh | All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="certificate.html"><i class='bx bx-up-arrow-alt'></i></a>
+
+    </div>
+  </footer>
+
+<script src="js/script.js"></script>      
+</body>
+</html>

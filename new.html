@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    section {
+      display: none;
+      padding: 20px;
+    }
+
+    #home {
+      display: block;
+    }
+
+    #coursera {
+      background-color: #f2f2f2;
+    }
+
+    #exin {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#" onclick="showSection('home')">Home</a>
+  <a href="#" onclick="showSection('coursera')">Coursera</a>
+  <a href="#" onclick="showSection('exin')">Exin</a>
+  <a href="#" onclick="showSection('section3')">Section 3</a>
+  <a href="#" onclick="showSection('section4')">Section 4</a>
+</nav>
+
+<section id="home">
+  <h2>Home Section</h2>
+  <p>This is the content of the Home section.</p>
+</section>
+
+<section id="coursera">
+  <h2>Coursera Section</h2>
+  <p>This is the content of the Coursera section.</p>
+</section>
+
+<section id="exin">
+  <h2>Exin Section</h2>
+  <p>This is the content of the Exin section.</p>
+</section>
+
+<section id="section3">
+  <h2>Section 3</h2>
+  <p>This is the content of Section 3.</p>
+</section>
+
+<section id="section4">
+  <h2>Section 4</h2>
+  <p>This is the content of Section 4.</p>
+</section>
+
+<script>
+  function showSection(sectionId) {
+    // Hide all sections
+    var sections = document.querySelectorAll('section');
+    sections.forEach(function(section) {
+      section.style.display = 'none';
+    });
+
+    // Show the selected section
+    var selectedSection = document.getElementById(sectionId);
+    selectedSection.style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
